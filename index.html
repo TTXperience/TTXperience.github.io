@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUK TUK Xperience - Descubre un Nuevo Mundo de Turismo</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        /* Estilos para animaciones de scroll */
+        .animate-element {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        
+        .animate-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Diferentes tiempos de transición para crear efecto en cascada */
+        .delay-1 { transition-delay: 0.1s; }
+        .delay-2 { transition-delay: 0.2s; }
+        .delay-3 { transition-delay: 0.3s; }
+        .delay-4 { transition-delay: 0.4s; }
+        .delay-5 { transition-delay: 0.5s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="https://i.ibb.co/9HmXwJtN/logo-ccl.png" alt="TUK TUK Xperience Logo" class="logo">
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="index3.html">Tours</a>
+            <a href="index2.html">Sobre Nosotros</a>
+        </div>
+        <button class="contact-btn" onclick="location.href='contacto.html'">
+            Contáctenos
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+            </svg>
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h3 class="animate-element">TUK TUK Xperience</h3>
+            <h1 class="animate-element delay-1">Descubre un Nuevo Mundo de Turismo</h1>
+            <p class="animate-element delay-2">Explora la combinación perfecta de aventura y tecnología con nuestros tours en TUK TUKs y experiencias de realidad virtual. Vive momentos inolvidables mientras recorres lugares únicos.</p>
+            <a href="#" class="btn-primary animate-element delay-3">Reserva tu Aventura</a>
+            <a href="#" class="explore-link animate-element delay-3">
+                Explora Nuestros Tours
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+            <div class="social-icons animate-element delay-4">
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="benefits-header">
+            <h3 class="animate-element">¿Por Qué Elegirnos?</h3>
+            <h2 class="benefits-title animate-element delay-1">Beneficios Únicos de TUK TUK Xperience</h2>
+            <p class="benefits-subtitle animate-element delay-2">Ofrecemos una experiencia turística innovadora que combina transporte sostenible con tecnología de punta.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card animate-element delay-1">
+                <div class="benefit-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3949AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3>Tours Personalizados</h3>
+                <p>Adapta tu experiencia a tus intereses y descubre los destinos que más te apasionan.</p>
+            </div>
+            <div class="benefit-card animate-element delay-2">
+                <div class="benefit-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3949AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                </div>
+                <h3>Tecnología de Realidad Virtual</h3>
+                <p>Sumérgete en el pasado y el futuro con nuestras experiencias inmersivas de realidad virtual.</p>
+            </div>
+            <div class="benefit-card animate-element delay-3">
+                <div class="benefit-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3949AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <h3>Sostenibilidad</h3>
+                <p>Contribuye al cuidado del medio ambiente con nuestros TUK TUKs eléctricos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Moments Section -->
+    <section class="moments">
+        <h2 class="animate-element">Lugares Inolvidables</h2>
+        <div class="moments-text">
+            <p class="animate-element delay-1">Explora la belleza y la diversión de nuestros tours a través de imágenes vibrantes.</p>
+            <p class="animate-element delay-2">Mejores lugares turisticos segun TUK TUK Xperience</p>
+        </div>
+        <div class="gallery">
+            <img src="https://i.ibb.co/XZQC7fVj/barcelona.jpg" alt="Experiencia 1" class="animate-element delay-1">
+            <img src="https://i.ibb.co/MDZZn2SS/sevilla.jpg" alt="Experiencia 2" class="animate-element delay-2">
+            <img src="https://i.ibb.co/DPx7f2CC/cadiz.jpg" alt="Experiencia 3" class="animate-element delay-3">
+            <img src="https://i.ibb.co/V0PtTLCZ/salamanca.jpg" alt="Experiencia 4" class="animate-element delay-2">
+            <img src="https://i.ibb.co/Hpgq2J0D/madrid.jpg" alt="Experiencia 5" class="animate-element delay-3">
+            <img src="https://i.ibb.co/PvWvT9Bt/vitoria.jpg" alt="Experiencia 6" class="animate-element delay-4">
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <h3 class="animate-element">Experiencias que Inspiran</h3>
+            <h2 class="animate-element delay-1">Historias de Nuestros Clientes</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card animate-element delay-1">
+                <p>Una experiencia increíble. Los TUK TUKs son cómodos y la realidad virtual es simplemente fascinante.</p>
+                <div class="testimonial-author">
+                    <img src="https://i.ibb.co/238M6pJt/persona1.jpg" alt="Ana García">
+                    <div class="author-info">
+                        <h4>Ana García</h4>
+                        <span>@anagarcia</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card animate-element delay-2">
+                <p>Descubrí lugares que nunca imaginé. ¡Totalmente recomendado!</p>
+                <div class="testimonial-author">
+                    <img src="https://i.ibb.co/m5PfZJxx/persona3.jpg" alt="Carlos Pérez">
+                    <div class="author-info">
+                        <h4>Carlos Pérez</h4>
+                        <span>@carlosperez</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card animate-element delay-3">
+                <p>La combinación de turismo y tecnología es perfecta. ¡Volveré sin duda!</p>
+                <div class="testimonial-author">
+                    <img src="https://i.ibb.co/7JqJB6z4/persona2.jpg" alt="Lucía Fernández">
+                    <div class="author-info">
+                        <h4>Lucía Fernández</h4>
+                        <span>@luciafernandez</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2 class="animate-element">Prepárate para la Aventura</h2>
+        <p class="animate-element delay-1">Reserva tu lugar y vive una experiencia inolvidable con TUK TUK Xperience.</p>
+        <div class="features">
+            <div class="feature animate-element delay-1">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3>Fácil de Reservar</h3>
+                <p>Elige tu fecha y hora preferidas.</p>
+            </div>
+            <div class="feature animate-element delay-2">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <h3>Calidad Garantizada</h3>
+                <p>Miles de clientes satisfechos.</p>
+            </div>
+            <div class="feature animate-element delay-3">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                </div>
+                <h3>Compromiso Sostenible</h3>
+                <p>Apoya el turismo responsable.</p>
+            </div>
+        </div>
+        <a href="#" class="btn-primary animate-element delay-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px;">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="18" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            Reserva Ahora
+        </a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2 class="animate-element">Contáctanos</h2>
+        <p class="animate-element delay-1">Estamos aquí para responder tus dudas y ayudarte a planificar tu próxima aventura.</p>
+        <div class="locations">
+            <div class="location animate-element delay-1">
+                <h3>Soon...</h3>
+                <p>......</p>
+                <p>......</p>
+            </div>
+            <div class="location animate-element delay-2">
+                <h3> Vitoria-Gasteiz </h3>
+                <p>Avenida Gasteiz 01003, Vitoria,</p>
+                <p>España</p>
+            </div>
+            <div class="location animate-element delay-3">
+                <h3>Soon....</h3>
+                <p>.....</p>
+                <p>......</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="index3.html">Tours</a>
+            <a href="index2.html">Sobre Nosotros</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-social">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </a>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+            </a>
+        </div>
+        <p class="copyright">© TUK TUK Xperience 2025. Todos los derechos reservados. Descubre el turismo del futuro con nosotros.</p>
+    </footer>
+
+    <!-- Script para activar las animaciones al hacer scroll -->
+    <script>
+        // Función para verificar si un elemento está visible en la ventana
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight) * 0.85
+            );
+        }
+        
+        // Función para añadir la clase 'visible' a los elementos cuando son visibles
+        function checkElements() {
+            const elements = document.querySelectorAll('.animate-element');
+            elements.forEach(element => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        // Ejecutar la comprobación al cargar la página y al hacer scroll
+        window.addEventListener('load', checkElements);
+        window.addEventListener('scroll', checkElements);
+    </script>
+</body>
+</html>

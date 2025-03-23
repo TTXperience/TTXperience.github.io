@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencias de Tour Virtual</title>
+    <link rel="stylesheet" href="styles3.css">
+    <!-- Añadimos la biblioteca AOS para animaciones al hacer scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <style>
+        /* Estilo adicional para las animaciones */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Retraso escalonado para elementos en grupos */
+        .staggered-animation:nth-child(1) { transition-delay: 0s; }
+        .staggered-animation:nth-child(2) { transition-delay: 0.1s; }
+        .staggered-animation:nth-child(3) { transition-delay: 0.2s; }
+        .staggered-animation:nth-child(4) { transition-delay: 0.3s; }
+    </style>
+</head>
+
+<body>
+<header data-aos="fade-down" data-aos-duration="800">
+    <img src="https://i.ibb.co/9HmXwJtN/logo-ccl.png" alt="TUK TUK Xperience Logo" class="logo">
+    <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="index3.html">Tours</a>
+        <a href="index2.html">Sobre Nosotros</a>
+    </div>
+    <button class="contact-btn" onclick="location.href='contacto.html'">
+        Contáctenos
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5l7 7-7 7"></path>
+        </svg>
+    </button>
+</header>
+
+<!-- Sección de categorías -->
+<section class="categorias">
+    <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="800">Explora nuestras categorías</h2>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Encuentra el tour perfecto para ti y vive una experiencia inolvidable.</p>
+        
+        <div class="categoria-cards">
+            <div class="categoria-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="0">
+                <div class="categoria-label">Tours culturales</div>
+                <img class="foto-categoria" src="https://i.ibb.co/60JfHmXW/cultura.jpg" alt="">
+            </div>
+            <div class="categoria-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="categoria-label">Aventuras al aire libre</div>
+                <img class="foto-categoria" src="https://i.ibb.co/7tLpSs9x/monte.jpg" alt="">
+            </div>
+            <div class="categoria-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="categoria-label">Recorridos históricos</div>
+                <img class="foto-categoria" src="https://i.ibb.co/6JscfQT5/historia.jpg" alt="">
+            </div>
+            <div class="categoria-card" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="600">
+                <div class="categoria-label">Tours gastronómicos</div>
+                <img class="foto-categoria2" src="https://i.ibb.co/4wZmG9xf/gastronomia.jpg" alt="">
+            </div>
+        </div>
+        
+        <a href="#" class="ver-todas" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Ver todas las categorías →</a>
+    </div>
+</section>
+
+<!-- Sección experiencia -->
+<section class="container">
+    <div class="experiencia">
+        <div class="experiencia-info">
+            <h3 data-aos="fade-right" data-aos-duration="800">Descubre cada detalle</h3>
+            <h2 data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Una experiencia sin igual</h2>
+            <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">Sumérgete en nuestros tours diseñados para ofrecerte una combinación perfecta de diversión y aprendizaje. Cada itinerario está cuidadosamente planeado para maximizar tu experiencia.</p>
+            <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">Nuestros tours incluyen actividades interactivas, tecnología de realidad virtual y guías expertos que te llevarán a los lugares más emblemáticos. ¡Prepárate para vivir momentos únicos!</p>
+            
+            <div class="caracteristicas">
+                <div class="caracteristica" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                    <span class="caracteristica-icon">🌎</span>
+                    <div>
+                        <h4>Exploración global</h4>
+                        <p>Viaja por diferentes culturas y paisajes sin salir de tu ciudad.</p>
+                    </div>
+                </div>
+                <div class="caracteristica" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <span class="caracteristica-icon">🥽</span>
+                    <div>
+                        <h4>Realidad virtual</h4>
+                        <p>Experimenta lugares históricos y naturales como nunca antes.</p>
+                    </div>
+                </div>
+                <div class="caracteristica" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <span class="caracteristica-icon">👨‍🏫</span>
+                    <div>
+                        <h4>Guías expertos</h4>
+                        <p>Nuestros guías están listos para ofrecerte información fascinante durante el recorrido.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 data-aos="fade-right" data-aos-duration="800">Sin complicaciones</h2>
+            <p data-aos="fade-right" data-aos-duration="800" data-aos-delay="100">Reserva tu tour fácilmente y disfruta de una experiencia sin estrés desde el inicio hasta el final.</p>
+        </div>
+        <div class="experiencia-img" data-aos="fade-left" data-aos-duration="1000"></div>
+    </div>
+</section>
+
+<!-- Sección planes -->
+<section class="planes">
+    <div class="container">
+        <h3 data-aos="fade-up" data-aos-duration="800">Elige tu experiencia ideal</h3>
+        <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Planes accesibles</h2>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Encuentra el tour que se adapta a tu presupuesto y horarios.</p>
+        
+        <table class="planes-table" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Básico</th>
+                    <th>Premium</th>
+                    <th>VIP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td class="precio">€20</td>
+                    <td class="precio">€50</td>
+                    <td class="precio">€100</td>
+                </tr>
+                <tr>
+                    <td>Recorrido de 1 hora</td>
+                    <td class="check">✓</td>
+                    <td class="x">✕</td>
+                    <td class="x">✕</td>
+                </tr>
+                <tr>
+                    <td>Recorrido de 3 horas</td>
+                    <td class="x">✕</td>
+                    <td class="check">✓</td>
+                    <td class="x">✕</td>
+                </tr>
+                <tr>
+                    <td>Actividades interactivas</td>
+                    <td class="x">✕</td>
+                    <td class="check">✓</td>
+                    <td class="x">✕</td>
+                </tr>
+                <tr>
+                    <td>Realidad virtual avanzada</td>
+                    <td class="x">✕</td>
+                    <td class="x">✕</td>
+                    <td class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Guía privado</td>
+                    <td class="x">✕</td>
+                    <td class="x">✕</td>
+                    <td class="check">✓</td>
+                </tr>
+                <tr>
+                    <td>Comida incluida</td>
+                    <td class="x">✕</td>
+                    <td class="x">✕</td>
+                    <td class="check">✓</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- Sección beneficios -->
+<section class="beneficios">
+    <div class="container">
+        <h2 data-aos="fade-up" data-aos-duration="800">Beneficios únicos</h2>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Descubre cómo nuestros tours con TUK TUKs y realidad virtual transforman tu forma de explorar.</p>
+        
+        <div class="beneficios-cards">
+            <div class="beneficio-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="0">
+                <div class="beneficio-icon">🚗</div>
+                <h3>Comodidad</h3>
+                <p>Viaja de manera cómoda y ecológica con nuestros TUK TUKs.</p>
+            </div>
+            <div class="beneficio-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                <div class="beneficio-icon">🥽</div>
+                <h3>Innovación</h3>
+                <p>Explora con tecnología de realidad virtual que lleva tu experiencia al siguiente nivel.</p>
+            </div>
+            <div class="beneficio-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                <div class="beneficio-icon">♿</div>
+                <h3>Accesibilidad</h3>
+                <p>Tours diseñados para todas las edades y niveles de experiencia.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer data-aos="fade-up" data-aos-duration="800">
+    <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="index3.html">Tours</a>
+        <a href="index2.html">Sobre Nosotros</a>
+        <a href="#">Contacto</a>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-social">
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+            </svg>
+        </a>
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+        </a>
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+            </svg>
+        </a>
+    </div>
+    <p class="copyright">© TUK TUK Xperience 2025. Todos los derechos reservados. Descubre el turismo del futuro con nosotros.</p>
+</footer>
+
+<!-- Scripts necesarios para las animaciones -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    // Inicializar la biblioteca AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
+
+    // Función para implementar nuestra propia animación de aparición al hacer scroll
+    document.addEventListener('DOMContentLoaded', function() {
+        const fadeElements = document.querySelectorAll('.fade-up');
+        
+        const fadeInOnScroll = function() {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('is-visible');
+                }
+            });
+        };
+        
+        // Ejecutar al cargar la página
+        fadeInOnScroll();
+        
+        // Escuchar el evento de scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+    });
+</script>
+</body>
+</html>

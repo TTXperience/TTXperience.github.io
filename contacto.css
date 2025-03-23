@@ -1,0 +1,257 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: white;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-btn {
+    background-color: #3949AB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a1172 0%, #4259cd 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: white;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact-btn {
+    background-color: #3a51cc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10%;
+    gap: 50px;
+}
+
+.left-section {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.intro-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-heading {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.schedule {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-message {
+    margin-top: 40px;
+}
+
+.contact-email {
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-heading {
+    margin-bottom: 20px;
+}
+
+.social-platforms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-platforms a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-section {
+    position: relative; /* Necesario para el pseudo-elemento */
+    flex: 3;
+    max-width: 400px;
+     /* Ajusta según necesites */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.right-section::before {
+    content: ""; /* Requerido para que el pseudo-elemento funcione */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.ibb.co/9HmXwJtN/logo-ccl.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 80px;
+    opacity: 0.3; /* Ajusta el nivel de transparencia (0.0 - 1.0) */
+    z-index: -1; /* Mantiene la imagen en el fondo */
+}
+
+.contact-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 100;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .right-section {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background-color: #0D1757;
+    color: white;
+    padding: 60px 10% 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-social a {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+}
