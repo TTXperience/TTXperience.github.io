@@ -205,6 +205,12 @@ textarea.form-control {
     margin-bottom: 20px;
 }
 
+.stagger-delay > * {
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+}
+
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
