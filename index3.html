@@ -68,10 +68,11 @@
             </div>
         </div>
         
-        <a href="#" class="ver-todas" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Ver todas las categorías →</a>
+        <a href=""  class="ver-todas" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">Ver todas las categorías →</a>
     </div>
 </section>
-
+<!-- Arriba tengo que poner el link de todas las categorias (cuando la haga)-->
+ 
 <!-- Sección experiencia -->
 <section class="container">
     <div class="experiencia">
@@ -131,9 +132,9 @@
             <tbody>
                 <tr>
                     <td></td>
-                    <td class="precio">100€</td>
-                    <td class="precio">140€</td>
-                    <td class="precio">210€</td>
+                    <td class="precio">€100</td>
+                    <td class="precio">€150</td>
+                    <td class="precio">€210</td>
                 </tr>
                 <tr>
                     <td>Recorrido de 1 hora</td>
@@ -145,13 +146,13 @@
                     <td>Recorrido de 3 horas</td>
                     <td class="x">✕</td>
                     <td class="check">✓</td>
-                    <td class="check">✓</td>
+                    <td class="x">✕</td>
                 </tr>
                 <tr>
                     <td>Actividades interactivas</td>
                     <td class="x">✕</td>
                     <td class="check">✓</td>
-                    <td class="check">✓</td>
+                    <td class="x">✕</td>
                 </tr>
                 <tr>
                     <td>Realidad virtual avanzada</td>
@@ -161,8 +162,8 @@
                 </tr>
                 <tr>
                     <td>Guía privado</td>
-                    <td class="check">✓</td>
-                    <td class="check">✓</td>
+                    <td class="x">✕</td>
+                    <td class="x">✕</td>
                     <td class="check">✓</td>
                 </tr>
                 <tr>
@@ -202,12 +203,20 @@
     </div>
 </section>
 
-<footer data-aos="fade-up" data-aos-duration="800">
+<footer>
     <div class="footer-links">
         <a href="index.html">Inicio</a>
         <a href="index3.html">Tours</a>
         <a href="index2.html">Sobre Nosotros</a>
         <a href="#">Contacto</a>
+    </div>
+
+    <div class="oficial-documents">
+
+        <a class="plt-cks" href="politica-cookies.html"> POLITICA DE COOKIES</a>
+        <a class="plt-priv" href=""> POLITICA DE PRIVACIDAD</a>
+        <a class="plt-al-ts" href=""> AVISO LEGAL Y TERMINOS DE USO</a>
+
     </div>
     <div class="footer-divider"></div>
     <div class="footer-social">
@@ -267,7 +276,7 @@
         // Ejecutar al cargar la página
         fadeInOnScroll();
         
-        // Escuchar el evento de scroll
+
         window.addEventListener('scroll', fadeInOnScroll);
     });
 </script>
